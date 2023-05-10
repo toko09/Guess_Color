@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Game</title>
+    <link rel="shortcut icon" href="color.png" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+      <section class="left-side">
+        <h1 class="answer"></h1>
+        <h1 id="highscore">HighScore: 0</h1>
+        <h1 id="score">Score: </h1>
+        <h2>Guess color: <span id="display-color">(no color yet)</span></h2>
+        <div>
+          <button id="btn-easy">Easy</button>
+          <button id="btn-normal">Normal</button>
+          <button id="btn-hard">Hard</button>
+        </div>
+      </section>
+      <section class="right-side">
+        <!-- First row -->
+        <div class="first" onclick="checkAnswer(0)" id="box-0"></div>
+        <div class="first" onclick="checkAnswer(1)" id="box-1"></div>
+        <div class="first" onclick="checkAnswer(2)" id="box-2"></div>
+        <!-- Second row -->
+        <div class="second" onclick="checkAnswer(3)" id="box-3"></div>
+        <div class="second" onclick="checkAnswer(4)" id="box-4"></div>
+        <div class="second" onclick="checkAnswer(5)" id="box-5"></div>
+        <!-- Third row -->
+        <div class="third" onclick="checkAnswer(6)" id="box-6"></div>
+        <div class="third" onclick="checkAnswer(7)" id="box-7"></div>
+        <div class="third" onclick="checkAnswer(8)" id="box-8"></div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 12px;
+}
+
+.right-side {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-auto-rows: 100px;
+  gap: 20px;
+}
+
+.right-side > div {
+  border: 2px solid black;
+  cursor: pointer;
+}
+.answer{
+  opacity: 0;
+  transition: opacity 0.1s;
+}
